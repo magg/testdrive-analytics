@@ -1,0 +1,95 @@
+/*
+@import "foundation/foundation-global";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/labels";
+@import "foundation/components/forms";
+@import "foundation/components/sections";
+@import "foundation/components/top-bar";
+@import "foundation/components/panels";
+@import "foundation-fonts/general_foundicons";
+@import "foundation/components/global";
+@import "nv.d3";
+*/
+/* line 1, ../../sass/_chart.scss */
+.chart {
+  height: 300px;
+}
+
+/* line 19, ../../sass/main.scss */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #FFF;
+}
+
+/* line 25, ../../sass/main.scss */
+a {
+  color: #00B7FF;
+}
+
+/* line 30, ../../sass/main.scss */
+.app-header {
+  margin-bottom: 40px;
+}
+
+/* line 35, ../../sass/main.scss */
+.routes li.route a {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  color: white;
+  position: relative;
+}
+/* line 43, ../../sass/main.scss */
+.routes li.route a:hover {
+  background: #1b5692;
+}
+/* line 47, ../../sass/main.scss */
+.routes li.route a.active, .routes li.route a.active:hover {
+  background: #4f96de;
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+/* line 55, ../../sass/main.scss */
+.routes li.route a.active:before {
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  margin-left: -16px;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 16px solid transparent;
+  border-top: 16px solid #4f96de;
+}
+
+/* line 76, ../../sass/main.scss */
+.rating .on {
+  color: #333;
+}
+/* line 80, ../../sass/main.scss */
+.rating .off {
+  color: #EEE;
+}
+
+/* line 87, ../../sass/main.scss */
+.control {
+  padding: 5px 0 20px 0;
+}
+/* line 90, ../../sass/main.scss */
+.control label {
+  margin-bottom: 10px;
+  display: inline-block;
+  background: #ffbda3;
+  padding: 3px;
+  text-shadow: 1px 1px 2px #FFF;
+}
+/* line 98, ../../sass/main.scss */
+.control select {
+  font-size: 0.9em;
+  border: 1px solid #CCC;
+  background: none;
+  height: 150px;
+}

@@ -29,8 +29,14 @@ require.config({
 // Initial require to load the app
 require([
   'app',
+  'store',
 
   // Views
-  './ProductsByRatingChartView'
+  'views/ProductsByRatingChartView',
+  'views/ProductRatingByReviewsChartView',
+  'views/ProductsByCategoryChartView',
+  'views/ProductPriceByRatingChartView'
+    
+  
 ]);
 

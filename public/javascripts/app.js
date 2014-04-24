@@ -3,19 +3,7 @@ define(['ember', 'ember-data', 'nvd3', 'jquery-ui'], function(Ember) {
   var App = window.App = Ember.Application.create({ LOG_TRANSITIONS: true });
 
 
-  // Store
-    App.ApplicationAdapter = DS.RESTAdapter.extend();	
-	
-	// Models
-	  App.Product = DS.Model.extend({
-	    name: DS.attr('string'),
-	    description: DS.attr('string'),
-	    category: DS.attr('string'),
 
-	    price: DS.attr('number'),
-	    rating: DS.attr('number'),
-	    reviews: DS.attr('number')
-	  });
 	
 
   // Routes

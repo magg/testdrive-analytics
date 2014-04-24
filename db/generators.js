@@ -53,7 +53,8 @@ module.exports = {
 
         category: category,
         model: ch.numerify(ch.letterify('Model-?##?')),
-        rating: 1 + ch.Helpers.rand(100)
+        rating: 1 + ch.Helpers.rand(5),
+		reviews: ch.Helpers.rand(100),
       };
 
     };

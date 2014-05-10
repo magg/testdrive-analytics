@@ -1,0 +1,14 @@
+
+db/mongo_data/mongod.lock
+
+db/mongo_data/journal/lsn
+
+db/mongo_data/journal/j._1
+
+db/mongo_data/analytics/analytics.ns
+
+db/mongo_data/analytics/analytics.0
+
+db/mongo_data/local/local.0
+
+db/mongo_data/local/local.ns

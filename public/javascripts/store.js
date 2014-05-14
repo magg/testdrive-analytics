@@ -2,9 +2,11 @@ define(['app'], function(App) {
 
 
 // Store
-  App.ApplicationAdapter = DS.RESTAdapter.extend();	
+ App.ApplicationAdapter = DS.RESTAdapter.extend();	
 
 
+
+// Serializer
 App.ApplicationSerializer = DS.RESTSerializer.extend({
   primaryKey: '_id',
 });
@@ -30,4 +32,20 @@ App.RawTransform = DS.Transform.extend({
     rating: DS.attr('number'),
     reviews: DS.attr('number')
   });
+  
+  
+  App.ProductDetail = DS.Model.extend({
+      manufacturer: DS.attr('raw'),
+      sales: DS.attr('raw'),
+	  
+	  
+      color: DS.attr('string'),
+      releaseDate: DS.attr('date'),
+      model: DS.attr('string')
+	  
+
+  });
+  
+  
+  
 });

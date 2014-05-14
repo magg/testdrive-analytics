@@ -4,7 +4,12 @@ define(['app'], function(App) {
 // Store
  App.ApplicationAdapter = DS.RESTAdapter.extend();	
 
-
+DS.RESTAdapter.reopen({
+  pathForType: function(type) {
+    var decamelized = Ember.String.decamelize(type);
+    return Ember.String.pluralize(decamelized);
+  }
+});
 
 // Serializer
 App.ApplicationSerializer = DS.RESTSerializer.extend({

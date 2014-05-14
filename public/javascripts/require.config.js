@@ -30,6 +30,8 @@ require.config({
 require([
   'app',
   'store',
+  'routes',
+  'controllers',
 
   // Views
   'views/ProductsByRatingChartView',

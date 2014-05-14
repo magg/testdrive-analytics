@@ -1,11 +1,12 @@
 var models = require('../db/models');
+var async = require('async');
 
 module.exports = function (app) {
 
     app.get('/search', function (req, res){
 		var term = req.query.term || '';
-		models.Product.find({name: {$regex : term, $options: 'i'}}, 'name_id')
-		.limit(10);
+		models.Product.find({name: {$regex: term, $options: 'i'}}, 'name _id')
+		.limit(10)
 		.exec(function (err, docs){
 			
 			var results = docs.map(function(d){
@@ -38,7 +39,7 @@ module.exports = function (app) {
 			], function(err, results){
 				
 				if(err) return res.error(err);
-				var product = results[0],
+				var product = results[0];
 				product.sales = results[1];
 				res.json({product_detail: product});	
 			});	

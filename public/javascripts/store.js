@@ -34,7 +34,7 @@ App.RawTransform = DS.Transform.extend({
   });
   
   
-  App.ProductDetail = DS.Model.extend({
+  App.ProductDetail = App.Product.extend({
       manufacturer: DS.attr('raw'),
       sales: DS.attr('raw'),
 	  

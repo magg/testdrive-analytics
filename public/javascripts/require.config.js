@@ -35,7 +35,8 @@ require([
   'views/ProductsByRatingChartView',
   'views/ProductRatingByReviewsChartView',
   'views/ProductsByCategoryChartView',
-  'views/ProductPriceByRatingChartView'
+  'views/ProductPriceByRatingChartView',
+  'views/ProductSearchView'
     
   
 ]);

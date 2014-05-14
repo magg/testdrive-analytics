@@ -1,0 +1,20 @@
+<script type='text/x-handlebars' data-template-name='search'>
+
+<div class='row'> 
+
+	{{#view App.ProductSearchView}}
+	
+	{{view Ember.TextField classNames="search-input large-6 large-offset3" placeholder="Search Products..."  }}
+	
+	
+	{{/view}}
+</div>
+
+
+<div class='row'> 
+{{#with controller.activeProduct}}
+{{name}} - {{price}}
+{{/with}}
+</div>
+
+</script>

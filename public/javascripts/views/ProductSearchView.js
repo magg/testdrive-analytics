@@ -4,6 +4,8 @@ define(['app'], function (App) {
 	
 	didInsertElement: function () {
 
+		var view = this;
+
 		this.$('.search-input').autocomplete({
 			source: '/search',
 			

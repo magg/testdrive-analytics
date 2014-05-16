@@ -12,7 +12,7 @@ App.SearchController = Ember.ObjectController.extend({
 	activeProduct: null,
 	
 	loadProduct: function(productId){
-		this.set('activeProduct', App.Product.find(productId));
+		this.set('activeProduct', this.store.find('productDetail', productId));
 		
 	}
 	
